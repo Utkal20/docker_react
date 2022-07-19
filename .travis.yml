@@ -6,6 +6,6 @@ before_install:
   - docker build -t Utkal20/docker_react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true Utkal20/docker_react npm run test
 
 language: generic 
